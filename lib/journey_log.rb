@@ -1,7 +1,7 @@
 
 class Journey_log
 
-  attr_reader :journey_klass, :journey, :history
+  attr_reader :journey_klass, :journey
 
 def initialize(journey_klass)
   @journey_klass = journey_klass
@@ -35,15 +35,13 @@ end
     end
   end
 
-  def history
-    @history
+  def show_history
+    history
   end
 
   private
 
-  # def history
-  #   @history
-  # end
+  attr_reader :history
 
   def current_journey
     if journey == nil
