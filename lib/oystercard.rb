@@ -25,12 +25,11 @@ class Oystercard
 
   def touch_out(exit_station)
     @balance -= @journey.penalize_on_touch_out?
-    @journey.end(exit_station)
+    @journey.finish(exit_station)
     @journey.save_trip
     @journey.reset_trip
     charge_card
   end
-
 
   private
 

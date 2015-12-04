@@ -10,6 +10,7 @@ describe Journey do
     expect(subject.log).to eq(Hash.new)
   end
 
+
   # it 'penalize user with two consecutive touch_ins' do
   #   allow(card).to receive(:touch_in).with(station)
   #   card.touch_in(station)

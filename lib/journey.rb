@@ -13,7 +13,7 @@ class Journey
     current_journey << station
   end
 
-  def end(station)
+  def finish(station)
     current_journey << station
   end
 
